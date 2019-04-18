@@ -1,20 +1,11 @@
-# Web Design @cmda-minor-web 1819
-//Werken met en voor echte mensen.
+# Web Design
+Ontwerpen voor Marijn
 
 
+## Use case scenario
+Marijn is een motorisch gehandicapte man die werkt als developer bij (als ik weet waar hij werkt zal ik het hier invullen). Hij werkt met plaktoetsen en verder een gewone laptop (denk ik).
 
-In het vak Web design gaan we dingen ontwerpen voor echte mensen. Is er goede interactie? Kan je 'mens' je product op een prettige manier bedienen? Wat voor principes heb je gebruikt en getest? En zit er wel _nonsense_ in?
-
-
-
-
-
-## Leerdoelen
-- _Leren hoe je principles in een ontwerp kan toepassen._
-- _User needs begrijpen en gebruiken in je ontwerp._
-- _Leren hoe je moet testen en de resultaten gebruiken voor het verbeteren van je ontwerp._
-
-
+Voor mijn use case is Marijn een vakantie aan het plannen en wil een vlucht boeken. Hij moet nu een vlucht boeken. Boek een vlucht.
 
 
 ### Week 1

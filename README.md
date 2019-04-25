@@ -1,8 +1,7 @@
 # Web Design
 Ontwerpen voor Marijn
 
-https://loving-villani-36dbfc.netlify.com/
-
+https://420-vlucht.netlify.com
 ## Use case scenario
 Marijn is een motorisch gehandicapte man die werkt als developer bij (als ik weet waar hij werkt zal ik het hier invullen). Hij werkt met plaktoetsen en verder een gewone laptop (denk ik).
 

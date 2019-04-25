@@ -217,9 +217,12 @@ hilight()
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addDay()
 hilight()
-}else if(e.key == 'Tab'||e.code == 'Space'){
+}else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.months').focus();
+}else if(e.code == 'Tab'||e.code == 'Capslock'||e.code == 'ShiftLeft'){
+e.preventDefault()
+document.querySelector('button').focus();
 }
 })
 
@@ -230,9 +233,12 @@ MCheck()
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addM()
 MCheck()
-}else if(e.key == 'Tab'||e.code == 'Space'){
+}else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.years').focus();
+}else if(e.code == 'Tab'||e.code == 'Capslock'||e.code == 'ShiftLeft'){
+e.preventDefault()
+document.querySelector('.days').focus();
 }
 })
 
@@ -241,9 +247,12 @@ if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key =
 minY()
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addY()
-}else if(e.key == 'Tab'||e.code == 'Space'){
+}else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.daysb').focus();
+}else if(e.code == 'Tab'||e.code == 'Capslock'||e.code == 'ShiftLeft'){
+e.preventDefault()
+document.querySelector('.months').focus();
 }
 })
 ///////////////////////////
@@ -254,9 +263,12 @@ hi2light()
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addBDay()
 hi2light()
-}else if(e.key == 'Tab'||e.code == 'Space'){
+}else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.monthsb').focus();
+}else if(e.code == 'Tab'||e.code == 'Capslock'||e.code == 'ShiftLeft'){
+e.preventDefault()
+document.querySelector('.years').focus();
 }
 })
 
@@ -267,9 +279,12 @@ MCheck()
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addMb()
 MCheck()
-}else if(e.key == 'Tab'||e.code == 'Space'){
+}else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.yearsb').focus();
+}else if(e.code == 'Tab'||e.code == 'Capslock'||e.code == 'ShiftLeft'){
+e.preventDefault()
+document.querySelector('.daysb').focus();
 }
 })
 
@@ -278,12 +293,32 @@ if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key =
 minYb()
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addYb()
-}else if(e.key == 'Tab'||e.code == 'Space'){
+}else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('button').focus();
+}else if(e.code == 'Tab'||e.code == 'Capslock'||e.code == 'ShiftLeft'){
+e.preventDefault()
+document.querySelector('.monthsb').focus();
 }
 })
 
+document.body.addEventListener("keydown", function(e) {
+  if(e.code == 'Enter'){
+  e.preventDefault()
+document.querySelector('body').innerHTML = "<h1>App is broken :-(</h1><p class='date'>Please stop submitting the form. It doesn't work.</p>";
+  }
+
+})
+
+document.querySelector('button').addEventListener("keydown", function(e) {
+  if(e.code == 'Tab'||e.code == 'Capslock'||e.code == 'ShiftLeft'){
+  e.preventDefault()
+  document.querySelector('.yearsb').focus();
+  }else if(e.code == 'Enter'){
+  e.preventDefault()
+document.querySelector('body').innerHTML = "<h1>App is broken :-(</h1><p class='date'>Please stop submitting the form. It doesn't work.</p>";
+}
+})
 
 document.addEventListener("keydown", function(event) {
   let presst = "."+event.code;

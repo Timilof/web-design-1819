@@ -1,6 +1,7 @@
 :root {
   --form--blue: #5ca0c1;
   --form--orange: #fd9a00;
+  --form--wow: #feab00;
   --form--gold: #fcd000;
   --form--yello: #ffcb7a;
   --form--brown: #5f5f5f;
@@ -101,6 +102,12 @@ background-color: var(--form--purp);
 }
 .right{
 background-color: var(--form--blue);
+}
+.back{
+background-color: var(--form--brown);
+}
+.send{
+background-color: var(--form--wow);
 }
 
 fieldset{

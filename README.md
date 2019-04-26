@@ -28,14 +28,14 @@ Third test Marijn was very late and so I didn't really have an opportunity to ap
 ![third iteration](app/src/img/third.png)   
 
 ## Exclusive design principles
-Study Situation
-  To know what to do and how to do it I observed the person I'd be designing for. I watched him test other students' applications and then I watched him test my own to figure out what would be the most suitable for (a user like) him.
-Ignore Conventions
-  I ignored conventions by assigning events to all the keys. Normally I'd refrain from doing so however because i am designing for for just one user i know how he would use/interact with the app so it was acceptable.
-Prioritise Identity
-  My App is fitting for a guy like Marijn, it does what it says it does and in a very simple/straightforward way and it looks and behaves that way.
-Add Nonsense
-  Maybe interesting feedback on user input. so far nothing fun to add though
+#### Study Situation  
+  To know what to do and how to do it I observed the person I'd be designing for. I watched him test other students' applications and then I watched him test my own to figure out what would be the most suitable for (a user like) him.  
+#### Ignore Conventions  
+  I ignored conventions by assigning events to all the keys. Normally I'd refrain from doing so however because i am designing for for just one user i know how he would use/interact with the app so it was acceptable.  
+#### Prioritise Identity  
+  My App is fitting for a guy like Marijn, it does what it says it does and in a very simple/straightforward way and it looks and behaves that way.  
+#### Add Nonsense  
+  Maybe interesting feedback on user input. so far nothing fun to add though.  
 
 
 ## Use case scenario

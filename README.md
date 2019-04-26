@@ -1,6 +1,9 @@
 # Web Design
 The goal of this project is exclusive design for a physically impaired person, Marijn. Marijn is physically disabled and is confined
 
+#### live @
+https://420-vlucht.netlify.com
+
 The interface I'm creating will help Marijn pick a date range using his (only) keyboard. Based on feedback from Marijn I'll make adjustments and test my concept again.
 
 Uses sticky keys
@@ -34,7 +37,6 @@ Prioritise Identity
 Add Nonsense
   Maybe interesting feedback on user input. so far nothing fun to add though
 
-https://420-vlucht.netlify.com
 
 ## Use case scenario
 Marijn is een motorisch gehandicapte man die werkt als developer bij (als ik weet waar hij werkt zal ik het hier invullen). Hij werkt met plaktoetsen en verder een gewone laptop (denk ik).

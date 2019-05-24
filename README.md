@@ -35,6 +35,8 @@ Third test Marijn was very late and so I didn't really have an opportunity to ap
 
 ## Test 4  
 
+Classmates had this to say about my app:  
+
 Stoin Aa: "This is the most metal app I've ever seen!!"  
 
 Zekkie -- : "Radical!"  
@@ -43,8 +45,9 @@ Karin Liu : "Hahahaha leuk!"
 
 Tjebbe Marchand: "Leuke app. "
 
-Maanlamp: "ja larp is best wel oke eigenlijk, tis een echte sport met een supportive community, he wat? je app? nee niet gekeken"
+Maanlamp: "Ja larp is best wel oke eigenlijk, tis een echte sport met een supportive community, he wat? je app? nee niet gekeken"
 
+Lauping: "Welke app?"  
 
 ## Exclusive design principles
 #### Study Situation  

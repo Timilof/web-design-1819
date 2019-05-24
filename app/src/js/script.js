@@ -108,11 +108,13 @@ document.querySelector('.mo').textContent = months[monf.value-1]
 function addY() {
   years += 1;
   yeer.value = years;
+  yeerb.value = years
 document.querySelector('.ye').textContent = yeer.value
 };
 function minY() {
   years -= 1;
   yeer.value = years;
+  yeerb.value = years
 document.querySelector('.ye').textContent = yeer.value
 };
 
@@ -123,13 +125,14 @@ function addBDay() {
 if(daysb <= 30){
     daysb += 1;
     dagb.value = daysb;
+document.querySelector('.dab').textContent = dagb.value
 }else{console.log("can't go any higher chief")}
 };
 function minBDay() {
     if(daysb >= 2){
     daysb -= 1;
     dagb.value = daysb;
-
+document.querySelector('.dab').textContent = dagb.value
 }else{console.log('The bar is too low!!')}
 };
 
@@ -145,7 +148,7 @@ function minMb() {
 if(montb >= 2){
   montb -= 1;
   monfb.value = montb;
-document.querySelector('.mo').textContent = montbhs[monfb.value-1]
+document.querySelector('.mob').textContent = months[monfb.value-1]
 }else{console.log('The bar is too low!!')}
 };
 
@@ -214,9 +217,13 @@ document.querySelector('.days').addEventListener("keydown", function(e) {
 if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key == 'd'||e.key == 'c'||e.key == 'x'||e.key == 'z'){
 minDay()
 hilight()
+let audio = new Audio('../app/src/aud/guitar-raw-short.wav');
+audio.play();
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addDay()
 hilight()
+let audio = new Audio('../app/src/aud/heavy-sound-short.wav');
+audio.play();
 }else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.months').focus();
@@ -230,9 +237,13 @@ document.querySelector('.months').addEventListener("keydown", function(e) {
 if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key == 'd'||e.key == 'c'||e.key == 'x'||e.key == 'z'){
 minM()
 MCheck()
+let audio = new Audio('../app/src/aud/tim-ivankov-drum-b-short.wav');
+audio.play();
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addM()
 MCheck()
+let audio = new Audio('../app/src/aud/guitar-c-short.wav');
+audio.play();
 }else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.years').focus();
@@ -245,8 +256,12 @@ document.querySelector('.days').focus();
 document.querySelector('.years').addEventListener("keydown", function(e) {
 if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key == 'd'||e.key == 'c'||e.key == 'x'||e.key == 'z'){
 minY()
+let audio = new Audio('../app/src/aud/drum-dish-short.wav');
+audio.play();
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addY()
+let audio = new Audio('../app/src/aud/aaaahh-snake-short.wav');
+audio.play();
 }else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.daysb').focus();
@@ -260,9 +275,13 @@ document.querySelector('.daysb').addEventListener("keydown", function(e) {
 if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key == 'd'||e.key == 'c'||e.key == 'x'||e.key == 'z'){
 minBDay()
 hi2light()
+let audio = new Audio('../app/src/aud/dum-dum-ping-a-short.wav');
+audio.play();
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addBDay()
 hi2light()
+let audio = new Audio('../app/src/aud/guitar-raw-short.wav');
+audio.play();
 }else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.monthsb').focus();
@@ -276,9 +295,13 @@ document.querySelector('.monthsb').addEventListener("keydown", function(e) {
 if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key == 'd'||e.key == 'c'||e.key == 'x'||e.key == 'z'){
 minMb()
 MCheck()
+let audio = new Audio('../app/src/aud/aaaahh-snake-short.wav');
+audio.play();
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addMb()
 MCheck()
+let audio = new Audio('../app/src/aud/heavy-sound-short.wav');
+audio.play();
 }else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('.yearsb').focus();
@@ -291,8 +314,21 @@ document.querySelector('.daysb').focus();
 document.querySelector('.yearsb').addEventListener("keydown", function(e) {
 if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key == 'd'||e.key == 'c'||e.key == 'x'||e.key == 'z'){
 minYb()
+let audio = new Audio('../app/src/aud/guitar-a-short.wav');
+audio.play();
 }else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
 addYb()
+
+function play() {
+    var audio = new Audio('../app/src/aud/heavy-sound-short.wav');
+    if (audio.paused) {
+        audio.play();
+    }else{
+        audio.pause();
+        audio.currentTime = 0
+    }
+}
+play();
 }else if(e.code == 'Space'){
 e.preventDefault()
 document.querySelector('button').focus();
@@ -324,44 +360,16 @@ document.addEventListener("keydown", function(event) {
   let presst = "."+event.code;
 const bpres = document.querySelector(`${presst}`);
 bpres.classList.add("test");
+bpres.classList.add("skulltrooper");
+document.querySelector('body').classList.add('penta')
+document.querySelector('.container').classList.add('red')
+document.querySelector('.stone').classList.add('red')
 setTimeout(remover, 1000);
 function remover(){
 bpres.classList.remove("test");
+bpres.classList.remove("skulltrooper");
+document.querySelector('body').classList.remove('penta')
+document.querySelector('.container').classList.remove('red')
+document.querySelector('.stone').classList.remove('red')
 }
 })
-
-
-
-// // document.querySelector('input[type=date]').
-// document.querySelector('body').addEventListener("keydown", function(e) {
-//     if(e.key == 'a'||e.key == 'q'||e.key == 'w'||e.key == 'e'||e.key == 's'||e.key == 'd'||e.key == 'c'||e.key == 'x'||e.key == 'z'){
-//       const event = new KeyboardEvent('keydown', leftKey);
-//       console.log(event);
-//       addDay()
-//       e.srcElement.dispatchEvent(event);
-//     } else if (e.key == 'Space'){
-//       console.log('space');
-//     } else if (e.key == 'r' ||e.key == 't'||e.key == 'y'||e.key == 'f'|| e.key == 'g'||e.key == 'h'||e.key == 'v'||e.key == 'b'||e.key == 'n'){
-//       const event = new KeyboardEvent('keydown', rightKey);
-//       console.log(event);
-//       e.srcElement.dispatchEvent(event);
-//       minDay()
-//     } else {
-//       console.log('nee')
-//     }
-// })
-
-
-
-
-// document.querySelector('input').addEventListener('keydown', function(x){
-// if(x.key == 'ArrowLeft'){
-// console.log('lijknks')
-// }else if(x.key == 'ArrowRight'){
-// console.log('rightssd')
-// }else if(x.key == 'ArrowDown'){
-// console.log('downt')
-// }else if(x.key == 'ArrowUp'){
-// console.log('up')
-// }
-// })

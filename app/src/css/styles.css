@@ -16,10 +16,21 @@ body{
 background-color: #f5f5f5;
 font-family: avenir, verdana, sans-serif;
 margin: 0px;
+/* background-image: url(https://media.giphy.com/media/bsRSKZhTXgDXa/giphy-downsized-large.gif); */
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.skulltrooper{
+  background-image: url(https://media.giphy.com/media/bsRSKZhTXgDXa/giphy-downsized-large.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1{
 text-align: center;
+font-family:  avenir, sans-serif;
+/* color: #eee; */
 }
 form>*{
   font-size: 30px;
@@ -65,7 +76,7 @@ input{
 
 
 .key-container{
-max-width: 60%;
+max-width: 27%;
 margin: auto;
 }
 
@@ -75,16 +86,18 @@ margin: auto;
 }
 
 .key{
-  width: 60px;
-  height:60px;
+  width: 10px;
+  height:10px;
   display:block;
   border: 1px solid #333;
   background-color: #fff;
   text-align: left;
   padding-left: 8px;
-  line-height: 29px;
+  line-height: 13px;
   border-radius:2px;
-  float:left; margin-left: 2px;
+  float:left;
+  font-size: 7px;
+  margin-left: 2px;
   margin-bottom:2px;
   transition: box-shadow 0.2s ease;
   margin: 5px;
@@ -115,9 +128,9 @@ border: none;
 }
 
 .dual {
-  font-size: 14px;
-  line-height: 20px;
-  width:30px;
+  font-size: 7px;
+  line-height: 13px;
+  width:12px;
 }
 
 .backspace {
@@ -125,32 +138,41 @@ border: none;
   font-size: 12px;
 }
 .Space{
-  width: 260px;
+  width: 170px;
   background-color: var(--form--purp);
 }
 .Tab {
-  width: 50px;
-  line-height: 40px;
-  font-size:13px;
+  width: 30px;
+  line-height: 13px;
+  font-size:7px;
 }
 .letter{
-width: 50px;
+width: 6px;
 }
 .Backslash{
-width:64px;
+width:18px;
 }
-.CapsLock{width:70px; font-size:12px; line-height:18px;}
-.Enter{width:92px; line-height:40px; text-align: center; padding-left:0;}
+.CapsLock{
+  width:30px;
+  font-size:7px;
+  line-height:13px;
+}
+.Enter{
+  width:52px;
+  line-height:13px;
+  text-align: center;
+  padding-left:0;
+}
 .shift.left{
-width: 90px;
-line-height: 40px;
-font-size:13px;
+  width: 40px;
+  line-height: 10px;
+  font-size:7px;
 }
 
 .shift.right{
 width: 104px;
 line-height: 40px;
-font-size:13px;
+font-size:7px;
 }
 
 .container{
@@ -160,7 +182,6 @@ font-size:13px;
   margin: auto;
   width: 69%;
 }
-
 .container p{
   text-align: center;
   padding: 5px;
@@ -169,13 +190,93 @@ font-size:13px;
 }
 
 .selectet{
-background-color: var(--form--blue);
+/* background-color: var(--form--blue); */
 /* border-radius: 50%; */
+position: relative;
+color: #f5f5f5;
+}
+.selectet::before{
+content: "";
+width: 40px;
+height: 40px;
+position: absolute;
+background-position: 50% 50%;
+background-size: contain;
+/* background-image: url(https://static.thenounproject.com/png/340464-200.png); */
+/* background-image: url(http://pngimg.com/uploads/skull/skull_PNG64.png); */
+/* background-image: url(https://banner2.kisspng.com/20180420/srq/kisspng-pentagram-symbol-magic-pentagram-5ada6c3b471a73.6136937815242639952912.jpg); */
+background-image: url(https://i.pinimg.com/originals/39/99/a9/3999a94861b778485a2b0ca5e547f706.png);
+background-repeat: no-repeat;
+animation: shake-opacity .2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes shake-opacity{
+
+10%{transform:translate(1px, -2px) rotate(1.5deg);opacity:.95}
+20%{transform:translate(-4px, 5px) rotate(-.5deg);opacity:.8}
+30%{transform:translate(4px, -2px) rotate(-1.5deg);opacity:.62}
+40%{transform:translate(-1px, 2px) rotate(-1.5deg);opacity:.97}
+50%{transform:translate(5px, 0px) rotate(1.5deg);opacity:.97}
+60%{transform:translate(2px, -4px) rotate(1.5deg);opacity:.24}
+70%{transform:translate(-3px, 3px) rotate(1.5deg);opacity:.59}
+80%{transform:translate(2px, -2px) rotate(-.5deg);opacity:.03}
+90%{transform:translate(2px, -4px) rotate(-.5deg);opacity:.05}
+0%,100%{transform:translate(0, 0) rotate(0)}
+}
+
+.shake-opacity:hover{
+    animation-name: shake-opacity;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.penta{
+background-image: url(https://i.ya-webdesign.com/images/bloody-pentagram-png-5.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-color: #000;
+}
+
+.penta h1{
+  font-size: 40px;
+}
+.penta h1,
+.penta .stone{
+font-family: 'Germania One', avenir, sans-serif;
+color: #8b0206;
+}
+
+.red{
+color: #8b0206;
+}
+
+.selected::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-image: url(http://pngimg.com/uploads/skull/skull_PNG64.png);
+  background-repeat: no-repeat;
+  animation-name: shake-opacity;
+  animation-duration: .2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .selected{
-background-color: var(--form--yello);
+/* background-color: var(--form--yello); */
 /* border-radius: 50%; */
+position: relative;
+color: #f5f5f5;
 }
 
 .feb p:nth-child(n+29){
@@ -186,6 +287,9 @@ display: none;
 display: none;
 }
 
+.hidden{
+display: none;
+}
 
 .test{
   background-color: var(--form--blue);
@@ -198,4 +302,16 @@ display: none;
 /* .key:hover{box-shadow:0px 0px 10px #14B524; z-index:1000;} */
 .date{
 text-align: center;
+}
+.stone{
+  max-width: 20%;
+    max-height: 400px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    align-self: baseline;
 }

@@ -33,6 +33,19 @@ Third test Marijn was very late and so I didn't really have an opportunity to ap
 
 ![third iteration](app/src/img/third.png)   
 
+## Test 4  
+
+Stoin Aa: "This is the most metal app I've ever seen!!"  
+
+Zekkie -- : "Radical!"  
+
+Karin Liu : "Hahahaha leuk!"  
+
+Tjebbe Marchand: "Leuke app. "
+
+Maanlamp: "ja larp is best wel oke eigenlijk, tis een echte sport met een supportive community, he wat? je app? nee niet gekeken"
+
+
 ## Exclusive design principles
 #### Study Situation  
   To know what to do and how to do it I observed the person I'd be designing for. I watched him test other students' applications and then I watched him test my own to figure out what would be the most suitable for (a user like) him.  

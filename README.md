@@ -2,7 +2,13 @@
 The goal of this project is exclusive design for a physically impaired person, Marijn. Marijn is physically disabled and is confined
 
 #### live @
+
+##### Metal version
+https://metal-marijn.netlify.com
+
+##### Normie version
 https://420-vlucht.netlify.com
+
 
 The interface I'm creating will help Marijn pick a date range using his (only) keyboard. Based on feedback from Marijn I'll make adjustments and test my concept again.
 
